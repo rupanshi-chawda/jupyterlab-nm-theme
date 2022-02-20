@@ -6,18 +6,17 @@ import {
 import { IThemeManager } from '@jupyterlab/apputils';
 
 /**
- * Initialization data for the @jupyterlab-nm-theme/jupyterlab-nm-theme extension.
+ * Initialization data for the @quansight-labs/jupyterlab-nm-theme extension.
  */
-const plugin: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlab-nm-theme/jupyterlab-nm-theme:plugin',
-  autoStart: true,
+const extension: JupyterFrontEndPlugin<void> = {
+  id: '@quansight-labs/jupyterlab-nm-theme',
   requires: [IThemeManager],
+  autoStart: true,
   activate: (app: JupyterFrontEnd, manager: IThemeManager) => {
-    console.log('JupyterLab extension @jupyterlab-nm-theme/jupyterlab-nm-theme is activated!');
-    const style = '@jupyterlab-nm-theme/jupyterlab-nm-theme/index.css';
-
+    console.log('JupyterLab extension @quansight-labs/jupyterlab-nm-theme is activated!');
+    const style = '@quansight-labs/jupyterlab-nm-theme/index.css';
     manager.register({
-      name: '@jupyterlab-nm-theme/jupyterlab-nm-theme',
+      name: 'JupyterLab NM',
       isLight: true,
       load: () => manager.loadCSS(style),
       unload: () => Promise.resolve(undefined)
@@ -25,4 +24,4 @@ const plugin: JupyterFrontEndPlugin<void> = {
   }
 };
 
-export default plugin;
+export default extension;

@@ -5,7 +5,8 @@
   "keywords": [
     "jupyter",
     "jupyterlab",
-    "jupyterlab-extension"
+    "jupyterlab-extension",
+    "jupyterlab-theme"
   ],
   "homepage": "https://github.com/github_username/@jupyterlab-nm-theme/jupyterlab-nm-theme",
   "bugs": {
