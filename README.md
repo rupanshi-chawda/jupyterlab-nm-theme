@@ -2,7 +2,7 @@
 
 [![Github Actions Status](https://github.com/github_username/@jupyterlab-nm-theme/jupyterlab-nm-theme/workflows/Build/badge.svg)](https://github.com/github_username/@jupyterlab-nm-theme/jupyterlab-nm-theme/actions/workflows/build.yml)
 
-A custom theme for nm
+A custom theme for NM's Jupyter lab environment that will change the appearance of the jupyterlab workspace
 
 
 
@@ -12,7 +12,7 @@ A custom theme for nm
 
 ## Install
 
-To install the extension, execute:
+To install the extension, execute below command:
 
 ```bash
 pip install jupyterlab-nm-theme
@@ -20,7 +20,7 @@ pip install jupyterlab-nm-theme
 
 ## Uninstall
 
-To remove the extension, execute:
+To remove the extension, execute below command:
 
 ```bash
 pip uninstall jupyterlab-nm-theme
@@ -31,7 +31,7 @@ pip uninstall jupyterlab-nm-theme
 
 ### Development install
 
-Note: You will need NodeJS to build the extension package.
+Note: You will need [NodeJS](https://yarnpkg.com/) to build the extension package.
 
 The `jlpm` command is JupyterLab's pinned version of
 [yarn](https://yarnpkg.com/) that is installed with JupyterLab. You may use
